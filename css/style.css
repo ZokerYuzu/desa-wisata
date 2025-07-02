@@ -1,0 +1,312 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color: #333;
+  min-height: auto;
+}
+
+body.dark-mode {
+  background-color: #222 !important;
+  color: #f1f1f1 !important;
+}
+
+.card.dark-mode,
+.navbar.dark-mode,
+.modal-content.dark-mode {
+  background-color: #333 !important;
+  color: #f1f1f1 !important;
+}
+
+.form-control.dark-mode,
+.table.dark-mode {
+  background-color: #222 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  background-color: #f0bb78;
+  overflow-x: hidden;
+}
+
+.collage {
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: fit-content;
+}
+
+nav {
+  background: #A4B465(50, 205, 50, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+#navbar {
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#about {
+  font-size: 20px;
+  padding-top: 1rem;
+}
+
+.preview-wrapper {
+  position: relative;
+  max-height: 2000px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding-top: none;
+}
+
+/* Hapus fade-shadow saat penuh */
+.preview-wrapper.no-shadow::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preview-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, white, transparent);
+  pointer-events: none;
+}
+
+.preview-full {
+  max-height: none !important;
+  overflow: visible;
+}
+
+.btn-toggle {
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background-color: #e6e6e6;
+  color: #a4b465;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-toggle:hover {
+  background-color: #d2d2d2;
+}
+
+.slide-content {
+  transition: all 0.4s ease-in-out;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* #pesan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/nagari.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  padding-top: 5rem;
+  min-height: auto;
+} */
+
+/* button {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  border: none;
+  background: none;
+} */
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding: 0 !important;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  /* tanpa sudut membulat */
+}
+
+.caption-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* hitam transparan */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* .lb-close,
+.lb-prev,
+.lb-next {
+  display: block !important;
+  z-index: 9999 !important;
+  opacity: 1 !important;
+} */
+.cta-button {
+  background: linear-gradient(45deg, #a4b465, rgb(26, 102, 43));
+  padding: 12px 24px;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 5px;
+}
+
+.search-form input[type="text"] {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-form button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #218838;
+}
+
+.card {
+  margin: 10px;
+  padding: 15px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* 
+.btn-primary {
+  background-color: #198754;
+  border-color: #198754;
+} */
+form {
+  padding-bottom: 3rem;
+}
+
+/* From Uiverse.io by d4niz */
+.contactButton {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  background: #a4b465;
+  color: white;
+  font-family: inherit;
+  padding: 0.45em 1em 0.45em 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  box-shadow: inset 0 0 1.6em -0.6em #717172;
+  position: relative;
+  height: 2.8em;
+}
+
+.contactButton:focus {
+  outline: none;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #929c6a;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #929c6a;
+}
+
+a.contactButton {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a.contactButton:hover {
+  color: white !important;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Cegah getaran saat modal muncul (Bootstrap fix) */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
